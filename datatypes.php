@@ -110,6 +110,54 @@
         echo print_r($assoc);
         echo "</pre>";
 
+        // array functions
+        $rand_numbers = array(32, 8, 16, 64, 512, 2, 128, 1024, 4, 256);
+        echo count($rand_numbers) . $ending;
+        echo max($rand_numbers) . $ending;
+        echo min($rand_numbers) . $ending;
+        // sort i rsort dokonują zmiany na tabeli
+        echo "<pre>";
+        sort($rand_numbers);
+        print_r($rand_numbers);
+        rsort($rand_numbers);
+        print_r($rand_numbers);
+        echo "</pre>";
+        $rand_numbers_str = implode(" * ", $rand_numbers);
+        echo $rand_numbers_str . $ending;
+        echo gettype($rand_numbers_str) . $ending;
+        $array_back = explode(" * ", $rand_numbers_str);
+        print_r($array_back);
+        echo $ending;
+        echo in_array(13, $array_back) . $ending;
+        echo in_array(8, $array_back) . $ending;
+        print_r(array_keys($assoc));
+        print_r(array_values($assoc));
+        echo $ending;
+        // w takiej kolejności będą dodane na początku/końcu
+        array_push($array_back, 2048, 2048, 4096);
+        array_unshift($array_back, 8192, 16384);
+        print_r($array_back);
+        echo $ending;
+        array_pop($array_back);
+        array_shift($array_back);
+        print_r($array_back);
+        echo $ending;
+        // array_unique nie modyfikuje tabeli
+        print_r(array_unique($array_back));
+        echo $ending;
+        echo array_search(128, $array_back) . $ending;
+        echo array_rand($array_back) . $ending;
+
+        // booleans, wartość true/false lub TRUE/FALSE
+        $res_true = true;
+        $res_false = false;
+        echo "true: " . $res_true . $ending;
+        echo "false: " . $res_false . $ending;
+        echo "is_bool: " . is_bool($res_true) . $ending;
+        if(is_float($float)) {
+            echo "There's a float." . $ending;
+        }
+
         ?>
 
     </body>
