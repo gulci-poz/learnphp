@@ -30,6 +30,7 @@
         <option value="$PROJECT_DIR$/notes_php.txt" />
         <option value="$PROJECT_DIR$/datatypes.php" />
         <option value="$PROJECT_DIR$/flowcontrol.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -92,7 +93,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -114,6 +114,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,14 +122,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.datatypes.php">
+  <component name="RunManager" selected="JavaScript Debug.functions.php">
     <configuration default="false" name="start.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/start.php">
       <method />
     </configuration>
     <configuration default="false" name="datatypes.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/datatypes.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="functions.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/functions.php">
       <method />
     </configuration>
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -160,14 +164,16 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.datatypes.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.functions.php" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.datatypes.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.functions.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.datatypes.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
       </list>
     </recent_temporary>
   </component>
@@ -261,33 +267,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3849821">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes_php.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11791907">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flowcontrol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.021479713">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40811455">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/datatypes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6650774">
-          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flowcontrol.php">
+    <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7568534">
-          <caret line="143" column="9" selection-start-line="143" selection-start-column="9" selection-end-line="143" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.31264916">
+          <caret line="72" column="49" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
           <folding />
         </state>
       </provider>
