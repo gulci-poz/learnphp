@@ -158,6 +158,49 @@
             echo "There's a float." . $ending;
         }
 
+        // null lub NULL
+        $varnull1 = null;
+        $varnull2 = "";
+        echo "null: " . is_null($varnull1) . $ending;
+        echo "empty string: " . is_null($varnull2) . $ending;
+        // nie zadeklarowana zmienna też jest null, ale pokazuje notice
+        // jako wskazówka dla developera
+        echo "not set: " . is_null($varnull3) . $ending;
+        echo "null: " . isset($varnull1) . $ending;
+        echo "empty string: " . isset($varnull2) . $ending;
+        // podobnie jak null, też nie jest set
+        echo "not set: " . isset($varnull3) . $ending;
+        // funkcja empty: "", null, 0, 0.0, "0", false, array()
+        echo "null: " . empty($varnull1) . $ending;
+        echo "empty string: " . empty($varnull2) . $ending;
+        // nie zadeklarowana zmienna też jest empty
+        echo "not set: " . empty($varnull3) . $ending;
+
+        // type juggling (automatic, by php) and casting (explicit)
+        $count = "2";
+        echo "count: " . gettype($count). $ending;
+        $count += 3;
+        echo "count: " . gettype($count). $ending;
+        $cats = "I have " . $count . " cats." . $ending;
+        echo "cats: " . gettype($cats) . $ending;
+        $count_dogs = "2 dogs";
+        // zmienia zmienną
+        settype($count_dogs, "integer");
+        echo "count_dogs: " . $count_dogs . ", " . gettype($count_dogs) . $ending;
+        $count_sheep = 10;
+        // casting wymaga nowej zmiennej
+        $count_sheep_conv = (string) $count_sheep;
+        echo "count_sheep conv: "
+            . $count_sheep_conv
+            . ", "
+            . gettype($count_sheep_conv)
+            . $ending;
+
+        // constants, na czas trwania skryptu
+        // przy ponownym uruchomieniu skryptu wartość może się zmienić (developer)
+        define("MAX_WIDTH", 980);
+        echo "MAX_WIDTH: " . MAX_WIDTH . $ending;
+
         ?>
 
     </body>
