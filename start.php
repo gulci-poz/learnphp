@@ -13,6 +13,7 @@
         <?php # komentarz 2 ?>
         <?php /* komentarz 3 */ ?>
         <?= 1+1 ?><br/>
+        <?php echo error_reporting(); ?><br/>
         <?php phpinfo(); ?>
 
     </body>

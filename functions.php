@@ -72,6 +72,9 @@
         // inaczej nie da rady skorzystać z opcjonalnego argumentu
         // i zawsze trzeba będzie podać wszystkie
         function paint($room = "office", $color = "red") {
+            echo "<pre>";
+            var_dump(debug_backtrace());
+            echo "</pre>";
             return "the room is: {$room}, the color is: {$color}<br/>";
         }
 
@@ -98,6 +101,12 @@
         echo paint("kitchen");
         echo paint(null, "green");
         // tutaj nie da się pominąć pierwszego argumentu, żeby był domyślny
+
+        // debug
+        echo "<pre>";
+        var_dump($add_subt_res);
+        print_r(get_defined_vars());
+        echo "</pre>";
 
         ?>
 

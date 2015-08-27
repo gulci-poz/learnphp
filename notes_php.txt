@@ -4,3 +4,61 @@ sudo /opt/lampp/lampp start
 sudo /opt/lampp/manager-linux-x64.run
 
 sudo /opt/lampp/lampp stop
+
+php.ini
+display_errors = On
+error_reporting = E_ALL
+
+PHP code
+ini_set("display_errors", "On");
+error_reporting(E_ALL);
+
+// E_STRICT dodane w PHP 5, od 5.4 zawiera się w E_ALL
+// error_reporting(E_ALL | E_STRICT);
+
+// ominięcie danej kategorii błędów
+// deprecated - scheduled to removal
+error_reporting(E_ALL & ~E_DEPRECATED);
+
+// zwraca jedną liczbę na podstawie wszystkich ustawionych stałych (suma)
+error_reporting();
+
+Fatal Errors
+Syntax Errors
+Warning
+Notices
+
+wyłączmy raportowanie błędów w środowisku produkcyjnym (PHP i tak generuje te informacje)
+po wyłączeniu raportowania wciąż mamy logi błędów na serwerze
+
+echo $variable;
+print_r($variable);
+gettype($variable);
+
+// wszystko o typie i wartości zmiennej
+var_dump($variable);
+
+print_r(get_defined_vars());
+
+// stos/historia uruchomienia funkcji, wewnątrz funkcji
+debug_backtrace();
+var_dump(debug_backtrace());
+
+3rd Party Tools
+Xdebug
+DBG
+FirePHP (używa Firebug w Firefoksie, daje debug output na konsolę Firebug)
+
+URLs/Links GET
+Forms POST
+Cookies COOKIE
+
+Reserved Chars in HTML
+< &lt;
+> &gt;
+& &amp;
+" &quot;
+
+header (nagłówek) HTTP musi być przed jakąkolwiek zawartością HTML,
+nawet przed spacją, uwaga na dodane (included) pliki
+plik PHP, który nie daje HTML output, może być załadowany przed nagłówkiem HTTP
