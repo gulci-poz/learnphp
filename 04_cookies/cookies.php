@@ -30,7 +30,7 @@ $expire = time() + (60 * 60 * 24 * 7);
     */
 
     // odebranie ciasteczka - nie ma synchronizacji z kodem powyżej (ustawianie ciasteczka)
-    $test =  isset($_COOKIE["test"]) ? $test = $_COOKIE["test"] : $test = "no test cookie";
+    $test = isset($_COOKIE["test"]) ? $_COOKIE["test"] : "no test cookie";
     echo $test;
     ?>
 

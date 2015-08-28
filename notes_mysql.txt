@@ -1,0 +1,63 @@
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+
+sudo /opt/lampp/manager-linux-x64.run
+
+sudo /opt/lampp/lampp startmysql
+sudo /opt/lampp/lampp stopmysql
+
+
+mysql -u user -p dbname < dbfile.sql
+mysql --version
+mysql -u root
+mysql -u root -p
+mysql -u root --password=
+
+exit;
+quit;
+
+show databases;
+create database widget corp;
+use widget_corp;
+drop widget_corp;
+
+grant all privileges on widget_corp.*
+to 'widget_cms'@'localhost'
+identified by 'widget_cms';
+
+show grants for 'widget_cms'@'localhost';
+
+mysql -u widget_cms -p widget_corp
+
+show tables;
+
+create table subjects (
+    id int(11) not null auto_increment,
+    menu_name varchar(30) not null,
+    position int(3) not null,
+    visible tinyint(1) not null,
+    primary key (id)
+);
+
+show columns from subjects;
+drop table subjects;
+
+R:
+select *
+from table
+where column1 = 'some_text'
+order by column1 asc;
+(desc)
+
+C:
+insert into table (column1, column2, column3)
+values (val1, val2, val3);
+
+U:
+update table
+set column1 = 'some_text'
+where id = 1;
+
+D:
+delete from table
+where id = 1;
