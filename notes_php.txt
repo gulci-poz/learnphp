@@ -62,3 +62,27 @@ Reserved Chars in HTML
 header (nagłówek) HTTP musi być przed jakąkolwiek zawartością HTML,
 nawet przed spacją, uwaga na dodane (included) pliki
 plik PHP, który nie daje HTML output, może być załadowany przed nagłówkiem HTTP
+
+output buffering
+php.ini
+output_buffering = 4096
+maximum
+On - unlimited
+mam tyle znaków przed przekazaniem bufora do serwera, w tym "czasie" mogę zmieniać nagłówek
+page by page
+ob_start() - przed jakąkolwiek zawartością HTML
+ob_end_flush()
+można też to zrobić nawet w przypadku zmiany w php.ini (ale po co?)
+jak już się decydujemy, to najlepiej dla całej aplikacji
+
+str null -> str
+bool other -> bool
+number other -> number
+
+empty()
+"" 0 "0" null false array()
+
+ciasteczka wracają do użytkownika w nagłówku strony
+ciasteczka idą do serwera w nagłówku strony
+konieczne jest wysłanie zapytania (request) przez użytkownika
+konieczne jest wysłanie odpowiedzi (response) przez serwer
