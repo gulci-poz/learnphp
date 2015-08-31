@@ -21,18 +21,7 @@
     <favorites_list name="learnphp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="notes_mysql.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/notes_mysql.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9583815">
-              <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -59,6 +48,13 @@
         <option value="$PROJECT_DIR$/03_forms/form_single.php" />
         <option value="$PROJECT_DIR$/04_cookies/cookies.php" />
         <option value="$PROJECT_DIR$/04_cookies/sessions.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_connect.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_update_delete.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_connect_read.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_update.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_delete.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_insert.php" />
+        <option value="$PROJECT_DIR$/05_php_db/db_escape.php" />
         <option value="$PROJECT_DIR$/notes_php.txt" />
         <option value="$PROJECT_DIR$/notes_mysql.txt" />
       </list>
@@ -76,9 +72,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="722" />
+    <option name="x" value="819" />
     <option name="y" value="27" />
-    <option name="width" value="1198" />
+    <option name="width" value="1101" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -123,6 +119,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -142,37 +139,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="04_cookies" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="03_forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,6 +153,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/05_php_db" />
       <recent name="$PROJECT_DIR$/04_cookies" />
       <recent name="$PROJECT_DIR$/03_forms" />
       <recent name="$PROJECT_DIR$" />
@@ -194,10 +163,7 @@
       <recent name="$PROJECT_DIR$/01_php_basics" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.sessions.php">
-    <configuration default="false" name="html_encoding.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/02_pages_basics/html_encoding.php">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.db_read.php">
     <configuration default="false" name="form.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/03_forms/form.php">
       <method />
     </configuration>
@@ -208,6 +174,9 @@
       <method />
     </configuration>
     <configuration default="false" name="sessions.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/04_cookies/sessions.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="db_read.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/05_php_db/db_read.php">
       <method />
     </configuration>
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -240,19 +209,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.html_encoding.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.form.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cookies.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.cookies.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sessions.php" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.form.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.cookies.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.cookies.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sessions.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.db_read.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.sessions.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.cookies.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.cookies.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.form.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.html_encoding.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.db_read.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sessions.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.cookies.php" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.cookies.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.form.php" />
       </list>
     </recent_temporary>
   </component>
@@ -270,10 +239,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="722" y="27" width="1198" height="1000" extended-state="0" />
-    <editor active="true" />
+    <frame x="819" y="27" width="1101" height="1000" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24540901" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26702997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922733" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -320,7 +289,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#464#532#0#PHP" expanded="true" />
+            <element signature="e#464#532#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -332,43 +301,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_php_basics/datatypes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5101311">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/04_cookies/cookies.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19331743">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding>
-            <element signature="e#464#532#0#PHP" expanded="true" />
+            <element signature="e#464#532#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04_cookies/sessions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45107397">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_php_basics/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.431466">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_php_basics/flowcontrol.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0059595">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_php_db/db_read.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.193087">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_php_db/db_update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37425506">
+          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_php_db/db_delete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8510131">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_php_basics/datatypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1954708">
+          <caret line="97" column="11" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_php_db/db_escape.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20977354">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <marker date="1441021613835" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441021613835" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441021613835" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05_php_db/db_insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39809296">
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes_php.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8820809">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notes_mysql.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9583815">
-          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.8820809">
+          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
         </state>
       </provider>

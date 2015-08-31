@@ -95,3 +95,36 @@ sesja wygasa wraz z zamknięciem przeglądarki (by design), wygasają też ciast
 pliki sesji pozostają, konieczne czyszczenie
 
 mechanizm sesji jest zautomatyzowany, sesje są przechowywane w $_SESSION
+
+db interaction:
+-create connection (1 per script)
+-query
+-use data
+-release data
+-close connection (1 per script)
+
+addslashes($string)
+automatycznie dla GET, POST, COOKIE od PHP 2, usunięte w PHP 5.4
+
+od PHP 5 mamy (od 4.3 do 5 była wersja mysql_)
+mysqli_real_escape_string($db, $string)
+
+prepared statements
+tworzymy szablon, do którego można potem wstawić dane
+parsowanie zapytania następuje tylko raz
+normalnie każde zapytanie jest parsowane osobno
+separacja zapytania od dynamicznych danych
+zapobiega atakowi SQL injection
+nie trzeba robić escape string, to idzie z automatu
+
+$username = 'gulci';
+$password = 'gulci';
+$query = "select id, first_name, last_name ";
+$query .= "from users ";
+$query .= "where username = ? and password = ?";
+$stmt = mysqli_prepare($connection, $query);
+mysqli_stmt_bind_param($stmt, 'ss', $username, $password);
+mysqli_stmt_execute($stmt);
+mysqli_stmt_bind_result($stmt, $id, $first_name, $last_name);
+mysqli_stmt_fetch($stmt);
+mysqli_stmt_close($stmt);

@@ -17,9 +17,11 @@ exit;
 quit;
 
 show databases;
-create database widget corp;
+create database widget_corp;
 use widget_corp;
 drop widget_corp;
+
+zawsze pojedyncza cytacja w MySQL
 
 grant all privileges on widget_corp.*
 to 'widget_cms'@'localhost'
@@ -40,6 +42,11 @@ create table subjects (
 );
 
 show columns from subjects;
+show fields from subjects;
+
+show columns in subjects;
+show fields in subjects;
+
 drop table subjects;
 
 R:
@@ -47,7 +54,7 @@ select *
 from table
 where column1 = 'some_text'
 order by column1 asc;
-(desc)
+//desc
 
 C:
 insert into table (column1, column2, column3)
@@ -61,3 +68,64 @@ where id = 1;
 D:
 delete from table
 where id = 1;
+
+select * from subjects;
+
+insert into subjects (menu_name, position, visible)
+values ('About Widget Corp', 1, 1);
+insert into subjects (menu_name, position, visible)
+values ('Products', 2, 1);
+insert into subjects (menu_name, position, visible)
+values ('Services', 3, 1);
+insert into subjects (menu_name, position, visible)
+values ('Misc', 4, 0);
+// 1 i 0 to referencje do TRUE i FALSE
+
+select * from subjects where visible = 1 order by position asc;
+select * from subjects where id = 2;
+select menu_name, position from subjects order by menu_name desc;
+
+update subjects
+set visible = 1
+where id = 4;
+
+update subjects
+set visible = 1;
+// dla wszystkich rzędów
+
+delete from subjects where id = 4;
+
+one-to-many, klucz obcy po stronie many
+
+create table pages (
+    id int(11) not null auto_increment,
+    subject_id int(11) not null,
+    menu_name varchar(30) not null,
+    position int(3) not null,
+    visible tinyint(1) not null,
+    content text,
+    primary key (id),
+    index (subject_id)
+);
+
+insert into pages (subject_id, menu_name, position, visible, content)
+values (1, 'Our Mission', 1, 1, 'Our mission has always been...');
+insert into pages (subject_id, menu_name, position, visible, content)
+values (1, 'Our History', 2, 1, 'Founded in 1898 by two enterprising engineers...');
+insert into pages (subject_id, menu_name, position, visible, content)
+values (2, 'Large Widgets', 1, 1, 'Our large widgets have to be seen to be believed...');
+insert into pages (subject_id, menu_name, position, visible, content)
+values (2, 'Small Widgets', 2, 1, 'They say big things come in small packages...');
+insert into pages (subject_id, menu_name, position, visible, content)
+values (3, 'Retrofitting', 1, 1, 'We love to replace widgets...');
+insert into pages (subject_id, menu_name, position, visible, content)
+values (3, 'Certification', 2, 1, 'We can certify any widget, not just our own...');
+
+select * from pages where subject_id = 3;
+
+create table admins (
+id int(11) not null auto_increment,
+username varchar(50) not null,
+hashed_password varchar(60) not null,
+primary key (id)
+);
