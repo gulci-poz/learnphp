@@ -71,13 +71,15 @@
         <option value="$PROJECT_DIR$/06_php_project/public/index.php" />
         <option value="$PROJECT_DIR$/06_php_project/public/javascripts/javascripts_placeholder.txt" />
         <option value="$PROJECT_DIR$/06_php_project/public/images/images_placeholder.txt" />
-        <option value="$PROJECT_DIR$/06_php_project/public/stylesheets/public.css" />
         <option value="$PROJECT_DIR$/06_php_project/includes/layouts/footer.php" />
         <option value="$PROJECT_DIR$/06_php_project/includes/db_connection.php" />
-        <option value="$PROJECT_DIR$/01_php_basics/start.php" />
         <option value="$PROJECT_DIR$/notes_php.txt" />
+        <option value="$PROJECT_DIR$/06_php_project/public/stylesheets/public.css" />
         <option value="$PROJECT_DIR$/06_php_project/includes/functions.php" />
         <option value="$PROJECT_DIR$/06_php_project/public/manage_content.php" />
+        <option value="$PROJECT_DIR$/01_php_basics/start.php" />
+        <option value="$PROJECT_DIR$/07_php_intermediate/varvar.php" />
+        <option value="$PROJECT_DIR$/07_php_intermediate/arrayfun.php" />
       </list>
     </option>
   </component>
@@ -169,25 +171,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="06_php_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learnphp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="06_php_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
+              <option name="myItemId" value="07_php_intermediate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -207,11 +191,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/07_php_intermediate" />
       <recent name="$PROJECT_DIR$/06_php_project" />
       <recent name="$PROJECT_DIR$/05_php_db" />
       <recent name="$PROJECT_DIR$/04_cookies" />
       <recent name="$PROJECT_DIR$/03_forms" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/06_php_project/includes/layouts" />
@@ -220,20 +204,20 @@
       <recent name="$PROJECT_DIR$/01_php_basics" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.manage_content.php">
-    <configuration default="false" name="db_read.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/05_php_db/db_read.php">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.varvar.php">
     <configuration default="false" name="start.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/01_php_basics/start.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="admin.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/06_php_project/public/admin.php">
       <method />
     </configuration>
     <configuration default="false" name="start.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/01_php_basics/start.php">
       <method />
     </configuration>
     <configuration default="false" name="manage_content.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/06_php_project/public/manage_content.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="manage_content.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/06_php_project/public/manage_content.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="varvar.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learnphp/07_php_intermediate/varvar.php">
       <method />
     </configuration>
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
@@ -266,19 +250,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.db_read.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.admin.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.start.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.manage_content.php" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.start.php" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.manage_content.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.manage_content.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.varvar.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.manage_content.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
-        <item index="2" class="java.lang.String" itemvalue="PHP Script.start.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.admin.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.db_read.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.varvar.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.manage_content.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.manage_content.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.start.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.start.php" />
       </list>
     </recent_temporary>
   </component>
@@ -341,23 +325,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/manage_content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
-          <folding>
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01_php_basics/start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -422,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01_php_basics/datatypes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1954708">
-          <caret line="97" column="11" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05_php_db/db_insert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39809296">
@@ -436,84 +396,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/javascripts/javascripts_placeholder.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/images/images_placeholder.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05_php_db/db_read.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7914184">
           <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="51" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/public/stylesheets/public.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35375723">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/includes/layouts/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14183553">
-          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/includes/layouts/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22288439">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06_php_project/includes/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.10131109">
-          <caret line="5" column="67" selection-start-line="5" selection-start-column="67" selection-end-line="5" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notes_mysql.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8820809">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01_php_basics/start.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44576877">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -521,40 +407,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3921335">
           <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06_php_project/public/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes_php.txt">
+    <entry file="file://$PROJECT_DIR$/06_php_project/public/stylesheets/public.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3549133">
-          <caret line="109" column="3" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.35375723">
+          <caret line="83" column="26" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06_php_project/includes/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64839095">
-          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+        <state vertical-scroll-proportion="-7.037037">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes_mysql.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes_php.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.268208">
+          <caret line="109" column="3" selection-start-line="109" selection-start-column="2" selection-end-line="109" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06_php_project/public/manage_content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8784267">
-          <caret line="62" column="51" selection-start-line="62" selection-start-column="51" selection-end-line="62" selection-end-column="51" />
-          <folding>
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1441111008972" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.38663486">
+          <caret line="18" column="65" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_php_basics/start.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08591885">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07_php_intermediate/varvar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60143197">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01_php_basics/datatypes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4725537">
+          <caret line="97" column="11" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07_php_intermediate/arrayfun.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8711217">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
