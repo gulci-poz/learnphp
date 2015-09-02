@@ -27,6 +27,8 @@
     echo "3 " . ${$students}[1] . "<br />";
     echo "4 " . ${$temp}[1] . "<br />";
     echo "5 " . ${${$temp}[1]} . "<br />";
+
+    echo "<a href=\"server_supervar.php?id=1\">Server Supervar</a>";
     ?>
 
     </body>
