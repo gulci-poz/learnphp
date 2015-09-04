@@ -2,8 +2,10 @@ php.ini
 display_errors = On
 error_reporting = E_ALL
 
-PHP code
+PHP code, na początku pliku i bloku PHP
 ini_set("display_errors", "On");
+lub
+ini_set("display_errors", "1");
 error_reporting(E_ALL);
 
 // E_STRICT dodane w PHP 5, od 5.4 zawiera się w E_ALL
@@ -134,3 +136,30 @@ mysqli_stmt_execute($stmt);
 mysqli_stmt_bind_result($stmt, $id, $first_name, $last_name);
 mysqli_stmt_fetch($stmt);
 mysqli_stmt_close($stmt);
+
+skrócona składnia dla echo
+<?= $name; ?> może być zmienna, liczba, string (single value)
+od PHP 5.4 działa automatycznie
+wcześniej trzeba było zmienić short_open_tag w php.ini
+
+błąd - zawsze wcześniejsza linia
+
+1 fatal error
+2 recoverable error - występuje przy wyrzuceniu wyjątku
+3 parse error - nie przetwarza dalej html
+4 warning - np. brak pliku z include
+5 deprecated
+6 strict - kod niezgodny z dobrymi praktykami
+7 notice
+
+if(error occurs) {
+    throw new Exceptio("Houston, we have a problem.");
+}
+
+try, catch - przechwycenie błędu, w catch można np. przekierować do odpowiedniej strony
+zawsze w parze
+try {
+    // badany kod
+} catch (Exception $e) {
+    echo $e->getMessage();
+}

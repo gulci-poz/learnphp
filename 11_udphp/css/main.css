@@ -1,0 +1,12 @@
+body {
+  background-color: silver;
+}
+
+#container_login {
+  width:300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid black;
+  background-color: white;
+}
