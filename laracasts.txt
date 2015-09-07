@@ -1,0 +1,16 @@
+packagist.org, lista pakietów dostępnych przez composer
+composer require phpspec/phpspec
+nazwa vendora / nazwa pakietu
+composer install
+instaluje wszystko, co jest wyspecyfikowane w composer.json (cat composer.json)
+np. dla kogoś, komu przekopiowaliśmy projekt
+vendor - zawiera wszystkie pakiety ściągnięte przez composer
+vendor\bin zawiera pliki wykonywalne
+autoloader umożliwia prosty import klas PHP zgodnie z prostą konwencją
+(zamiast ciągłego używania require)
+tworzymy projekt zamiast require
+(w innym folderze niż ten poprzedni z phpspec)
+composer create-project laravel/laravel learning-laravel-5 dev-develop
+(dev-develop gałąź rozwojowa projektu; teraz jest już pełna wersja,
+możemy korzystać z domyślnej gałęzi produkcyjnej)
+8min
