@@ -19,3 +19,69 @@ z poziomu learning-laravel-5
 php -S localhost:8888 -t public
 document root na public z projektu laravel
 uruchamiamy serwer (może się pojawić problem z brakiem mcrypt)
+
+
+laracasts -> composer
+laracasts -> homestead
+
+
+homestead - vagrant box przygotowany przez laravel,
+zestaw aplikacji na wirtualnej maszynie
+
+potrzebujemy vbox i vagrant
+
+vagrant to wrapper nad vbox i nie tylko, konfiguracja środowiska wirtualnego
+
+vagrant box add laravel/homestead
+
+composer global require "laravel/homestead=~2.0"
+executable dla laravel, global - w home dla całego systemu
+
+trzeba dodać homestead do PATH (dla danego użytkownika)
+echo "export PATH=$PATH:/home/gulci/.composer/vagrant/bin" >> ~/.bashrc
+
+homestead init
+tworzymy global configuration file
+gedit /home/gulci/.homestead/Homestead.yaml
+homestead edit - nie działa
+
+musimy autoryzować klucze ssh, sekcje authorize i keys
+/home/gulci/.ssh/id_rsa - zapisuje identyfikację
+/home/gulci/.ssh/id_rsa.pub
+nie wpisujemy nazwy pliku ani hasła
+po wcześniejszym użyciu git powinno już to być
+ssh-keygen -t rsa -C "gulci@homestead"
+
+mapowanie folderu w sekcji folders
+mapowanie domeny w sekcji sites, możemy utworzyć swoją
+ustalamy tu publiczny folder dla naszej strony
+
+dopisujemy w /etc/hosts
+198.162.10.10 homestead.app
+oni mają
+198.162.10.10 laracasts.dev
+w ustawieniach sites
+map: laracasts.dev
+to: /home/vagrant/Code/casts/public
+
+sekcja databases i variables
+
+bootowanie
+homestead up
+
+konsola
+homestead ssh
+
+php -v
+
+w przeglądarce
+homestead.app
+
+trzeba przekompilować moduł jądra
+VBoxManage --version
+sudo /etc/init.d/vboxdrv setup
+
+trzeba zainstalować paczkę kernel-devel
+sudo dnf install kernel-devel
+wersja musi pasować z naszym jądrem, nie chcemy robić updatu
+sudo dnf install kernel-devel-$(uname -r)
