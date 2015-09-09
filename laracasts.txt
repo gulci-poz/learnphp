@@ -23,27 +23,52 @@ uruchamiamy serwer (może się pojawić problem z brakiem mcrypt)
 
 laracasts -> composer
 laracasts -> homestead
-
-
 homestead - vagrant box przygotowany przez laravel,
-zestaw aplikacji na wirtualnej maszynie
+zestaw aplikacji i bibliotek dla developera na wirtualnej maszynie
 
-potrzebujemy vbox i vagrant
+Instalacja i konfiguracja VirtualBox (najlepiej od razy sudo su):
+http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/comment-page-1/
+http://www.if-not-true-then-false.com/2010/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel/comment-page-2/
+- dodajemy repo vbox
+cd /etc/yum.repos.d/
+wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+- robimy update
+- sprawdzamy wersję jądra
+rpm -qa kernel |sort -V |tail -n 1
+uname -r
+- instalacja dodatkowych pakietów (w tym kernel-devel)
+dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
+- pakiety dla Guest Additions
+dnf install gcc kernel-devel kernel-headers dkms make bzip2 perl
+- instalacja vbox
+dnf install VirtualBox-5.0
+- kompilowanie modułu jądra i utworzenie grupy vboxusers
+/etc/init.d/vboxdrv setup
+## lub ##
+service vboxdrv setup
+- dodanie użytkownika do grupy vboxusers
+usermod -a -G vboxusers gulci
+## ściąganie kernel-devel dla wersji jądra, które posiadamy ##
+sudo dnf install kernel-devel-$(uname -r)
+- możemy uruchomić VirtualBox
+VirttualBox
 
+instalacja vagrant
 vagrant to wrapper nad vbox i nie tylko, konfiguracja środowiska wirtualnego
 
 vagrant box add laravel/homestead
 
 composer global require "laravel/homestead=~2.0"
-executable dla laravel, global - w home dla całego systemu
+executable dla homestead, global - w home dla całego systemu
 
 trzeba dodać homestead do PATH (dla danego użytkownika)
-echo "export PATH=$PATH:/home/gulci/.composer/vagrant/bin" >> ~/.bashrc
+echo "export PATH=$PATH:/home/gulci/.composer/vendor/bin" >> ~/.bashrc
 
 homestead init
 tworzymy global configuration file
 gedit /home/gulci/.homestead/Homestead.yaml
-homestead edit - nie działa
+## lub ##
+homestead edit
 
 musimy autoryzować klucze ssh, sekcje authorize i keys
 /home/gulci/.ssh/id_rsa - zapisuje identyfikację
@@ -57,14 +82,20 @@ mapowanie domeny w sekcji sites, możemy utworzyć swoją
 ustalamy tu publiczny folder dla naszej strony
 
 dopisujemy w /etc/hosts
-198.162.10.10 homestead.app
-oni mają
-198.162.10.10 laracasts.dev
-w ustawieniach sites
-map: laracasts.dev
-to: /home/vagrant/Code/casts/public
+198.162.10.10 gulci.app
+
+ad-hoc:
+serve laravel.app /public_path
+trzeba potem dodać kolejną domenę do /etc/hosts
 
 sekcja databases i variables
+
+- zmiany w pliku Homestead.yaml nie są aplikowane automatycznie
+vagrant reload --provision
+- czasami trzeba uzyskać id maszyny
+vagrant global-status
+vagrant reload --provision id
+(vagrant provision id - spotkałem też takę wersję)
 
 bootowanie
 homestead up
@@ -75,13 +106,19 @@ homestead ssh
 php -v
 
 w przeglądarce
-homestead.app
+jeśli mamy ustawiony public, inaczej musimy jeszcze dojść po ścieżce
+gulci.app
 
-trzeba przekompilować moduł jądra
-VBoxManage --version
-sudo /etc/init.d/vboxdrv setup
+homestead
+homestead list
 
-trzeba zainstalować paczkę kernel-devel
-sudo dnf install kernel-devel
-wersja musi pasować z naszym jądrem, nie chcemy robić updatu
-sudo dnf install kernel-devel-$(uname -r)
+homestead suspend
+homestead halt
+
+
+token github
+b256dff78fb9b1d3beb298f6212ba77e3e5869a7
+
+- laravel executable, globalnie
+composer global require "laravel/installer=~1.1"
+- folder do $PATH dodaliśmy już przy okazji homestead
