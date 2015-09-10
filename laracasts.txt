@@ -122,3 +122,14 @@ b256dff78fb9b1d3beb298f6212ba77e3e5869a7
 - laravel executable, globalnie
 composer global require "laravel/installer=~1.1"
 - folder do $PATH dodaliśmy już przy okazji homestead
+
+
+zmieniamy .env.example na .env
+u mnie są oba pliki i w obu mam APP_ENV=local
+dzięki temu będę widział listing błędów
+
+tworzymy kontrolej z linii komend
+php artisan make:controller PageController
+resourceful routing - są przygotowane funkcje w kontrolerze
+php artisan make:controller PageController --plain
+php artisan help make:controller
