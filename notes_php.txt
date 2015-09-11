@@ -163,3 +163,22 @@ try {
 } catch (Exception $e) {
     echo $e->getMessage();
 }
+
+
+nie ma dostępu do mysql z serwera PHP
+konieczne jest rozszerzenie
+sudo dnf install php-mysqlnd
+potem możemy to usunąć
+sudo cp /usr/lib64/php/modules/mysqli.so \
+/opt/lampp/lib/php/extensions/no-debug-non-zts-20131226/
+zmiany w
+/opt/lampp/etc/php.ini
+extension=php_mysqli.so
+extension_dir jest aktywna, nie trzeba nic zmieniać
+sudo dnf install php-mysqlnd
+
+UWAGA!!!
+trzeba pisać pełną ścieżkę do php, bo inaczej bierze z tego, które jest w systemie
+a my chcemy z lamp
+/opt/lampp/bin/php -S localhost:8888 -t public
+oczywiście numer z dograniem dodatku trzeba zrobić

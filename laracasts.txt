@@ -133,3 +133,59 @@ php artisan make:controller PageController
 resourceful routing - są przygotowane funkcje w kontrolerze
 php artisan make:controller PageController --plain
 php artisan help make:controller
+
+ssh vagrant@127.0.0.1 -p 2222
+
+laravel new dev.todoparrot.com
+musimy mieć uruchomiony jakiś serwer WWW z PHP na wirtualce
+idziemy do folderu projektu i ustawiamy na wirtualce
+php -S localhost:8000 -t public
+mamy wtedy dostęp do aplikacji PHP
+gulci.app:8000
+nie trzeba kopiować .env.example bo .env już jest
+generujemy klucz aplikacji (do zarządzania poufnymi danymi, np. kodowanie cookies)
+php artisan key:generate
+
+.env (.env.example)
+laravel korzysta w phpdotenv
+(ładowanie zmiennych systemowych z .env do getenv(), $_ENV i $_SERVER)
+.gitattributes (text=auto koniec linii na LF)
+.gitignore
+
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+
+app - kod aplikacji; kontrolery, modele, middleware
+artisan - interfejs do generowania składowych aplikacji i nie tylko
+(*) bootstrap - konfiguracja startowa laravel (w tym lokalizacja app i public)
+composer.json - informacje o pakietach potrzebnych do działania aplikacji
+(*) composer.lock - informacja o stanie zainstalowanych pakietów
+config
+database - db migrations and seed data
+gulpfile.js - używany przez Elixir do definiowania zadań do automatyzacji buildu
+package.json - do instalacji Elixira i zależności
+pspspec.yml - konfiguracja BDD za pomocą phpspec
+phpunit.xml - konfiguracja PHPUnit
+public - root aplikacji; index.php (front controller, ładowanie i wykonanie aplikacji),
+.htaccess, robots.txt, favicon.ico
+readme.md - info aplikacji
+resources - widoki i wersje językowe, inne zasoby
+storage - cache, session and log data
+tests - testy PHPUnit
+vendor - kod laravel i trzecich aplikacji, interakcja za pomocą artisan i composer
+
+doctrine - ORM dla PHP, Eloquent - ORM dla Laravel
+
+z roota aplikacji (potrzebujemy artisana)
+nie dostanę się po domenie, a i tak muszę wpisywać całą ścieżkę
+php artisan serve
+za pomocą PHP idzie dobrze z domeny (mogę się zagłębić do ścieżki konkretnego
+projektu i mam dostęp po domenie), wtedy po localhost muszę wpisywać ścieżkę
+
+ustawienie namespace (wszystkie podzespoły aplikacji są namespaced), domyślnie app
+uaktualnia namespace wszędzie (aktualizacja w composer.json autoload/psr-4)
+php artisan app:name todoparrot
+42.5
