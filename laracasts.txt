@@ -188,4 +188,13 @@ projektu i mam dostęp po domenie), wtedy po localhost muszę wpisywać ścieżk
 ustawienie namespace (wszystkie podzespoły aplikacji są namespaced), domyślnie app
 uaktualnia namespace wszędzie (aktualizacja w composer.json autoload/psr-4)
 php artisan app:name todoparrot
+
+jeśli w konfiguracji homestead podamy pełną ścieżkę aplikacji, to mamy w tym miejscu serwer PHP
+jeśli mamy dodatkowe aplikacje, to dopisujemy je w ssh
+serve laravel.app /public_path
++ zmiany w /etc/hosts macierzystej maszyny
+musimy też przeładować obraz homestead
+vagrant global-status
+vagrant reload --provision id
+
 42.5
