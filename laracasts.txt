@@ -26,7 +26,7 @@ laracasts -> homestead
 homestead - vagrant box przygotowany przez laravel,
 zestaw aplikacji i bibliotek dla developera na wirtualnej maszynie
 
-Instalacja i konfiguracja VirtualBox (najlepiej od razy sudo su):
+Instalacja i konfiguracja VirtualBox (najlepiej od razu sudo su):
 http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/comment-page-1/
 http://www.if-not-true-then-false.com/2010/install-virtualbox-guest-additions-on-fedora-centos-red-hat-rhel/comment-page-2/
 - dodajemy repo vbox
@@ -196,5 +196,12 @@ serve laravel.app /public_path
 musimy też przeładować obraz homestead
 vagrant global-status
 vagrant reload --provision id
+
+ponowna kompilacja modułu jądra dla VBoxa:
+sudo /etc/init.d/vboxdrv setup
+
+update homestead-a:
+vagrant gloabal-status
+vagrant box update serial_maszyny
 
 42.5
